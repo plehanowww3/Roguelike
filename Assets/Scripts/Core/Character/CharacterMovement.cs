@@ -6,7 +6,7 @@ namespace Core.Character
 {
     public class CharacterMovement: MonoBehaviour
     {
-        [SerializeField] public Rigidbody2D m_rb; 
+        [field: SerializeField] public Rigidbody2D m_rb; 
         [SerializeField] private float m_moveSpeed;
         private Vector2 m_moveInput;
 

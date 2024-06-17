@@ -20,6 +20,7 @@ namespace ZenjectClasses
             Container.Bind<Model>().AsSingle().NonLazy();
             Container.Bind<ExampleViewModel>().AsSingle().NonLazy();
             Container.Bind<SkillsViewModel>().AsSingle().NonLazy();
+            Container.Bind<PartsViewModel>().AsSingle().NonLazy();
         }
     }
 }
