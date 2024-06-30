@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ccaea55868648868509fb79a1e17cc8, type: 3}
+  m_Name: PartsScriptableObject
+  m_EditorClassIdentifier: 
+  head:
+  - id: KnightHead
+    bodyPart: 1
+    avatarType: Knight
+    sprite: {fileID: 0}
+  body:
+  - id: ShitHead
+    bodyPart: 2
+    avatarType: hshit
+    sprite: {fileID: 0}
+  leftHand:
+  - id: drocjilnya
+    bodyPart: 3
+    avatarType: sperma
+    sprite: {fileID: 0}
+  rightHand:
+  - id: Shield
+    bodyPart: 4
+    avatarType: adawd
+    sprite: {fileID: 0}
