@@ -1,6 +1,7 @@
 using System;
 using MVVM.ViewModels;
 using UnityEngine;
+using UnityEngine.UI;
 using Zenject;
 
 namespace MVVM.Views

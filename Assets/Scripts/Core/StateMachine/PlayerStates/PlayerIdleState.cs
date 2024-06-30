@@ -2,10 +2,10 @@ using Core.Character;
 
 namespace Core.StateMachine.States
 {
-    public class WalkState : IState
+    public class PLayerIdleState : IState
     {
         private PlayerController player;
-        public WalkState(PlayerController player)
+        public PLayerIdleState(PlayerController player)
         {
             this.player = player;
         }

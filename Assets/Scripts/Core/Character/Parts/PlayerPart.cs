@@ -10,7 +10,7 @@ namespace Core.Character.Parts
         [SerializeField] private BodyPartData m_bodyPartData;
 
         public string id => m_bodyPartData.id;
-        public string type => m_bodyPartData.typeId;
+        public string type => m_bodyPartData.avatarType;
        
         public BodyPart bodyPart => m_bodyPart;
 

@@ -8,13 +8,13 @@ namespace Core.StateMachine
     public class PlayerStateMachine
     {
         public IState CurrentState { get; private set; }
-        public WalkState walkState;
-        public IdleState idleState;
+        public PLayerWalkState pLayerWalkState;
+        public PLayerIdleState pLayerIdleState;
         
         public PlayerStateMachine(PlayerController player)
         {
-            this.walkState = new WalkState(player);
-            this.idleState = new IdleState(player);
+            this.pLayerWalkState = new PLayerWalkState(player);
+            this.pLayerIdleState = new PLayerIdleState(player);
         }
         
         public void Initialize(IState startingState)

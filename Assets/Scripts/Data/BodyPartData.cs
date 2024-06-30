@@ -1,5 +1,4 @@
 using System;
-using UnityEditor;
 using UnityEngine;
 
 namespace Data
@@ -7,9 +6,9 @@ namespace Data
     [Serializable]
     public class BodyPartData
     {
-        public BodyPart bodyPart;
         public string id;
-        public string typeId;
+        public CharacterPart bodyPart;
+        public string avatarType;
         public Sprite sprite;
     }
 }
