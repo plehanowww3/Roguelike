@@ -16,19 +16,39 @@ MonoBehaviour:
   - id: KnightHead
     bodyPart: 1
     avatarType: Knight
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 6a22940ea74681e47810887766e98bc8, type: 3}
+  - id: BugHead
+    bodyPart: 1
+    avatarType: Knight
+    sprite: {fileID: 21300000, guid: 6a22940ea74681e47810887766e98bc8, type: 3}
   body:
   - id: ShitHead
     bodyPart: 2
     avatarType: hshit
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 5e6c3e5f1856275479443d06ba54dc67, type: 3}
+  - id: Box
+    bodyPart: 2
+    avatarType: hshit
+    sprite: {fileID: 21300000, guid: aee018c9f4887614aa9931bece56c109, type: 3}
   leftHand:
   - id: drocjilnya
     bodyPart: 3
     avatarType: sperma
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: a8dc1fd2bf655b34f932900f4a4905f4, type: 3}
+  - id: Sword
+    bodyPart: 3
+    avatarType: sperma
+    sprite: {fileID: 21300000, guid: 27db7025f3160004aae1e01910fc2ca9, type: 3}
   rightHand:
-  - id: Shield
+  - id: Book
     bodyPart: 4
     avatarType: adawd
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 630ca75ba9df6f64d862a493961b4e1f, type: 3}
+  - id: Potion
+    bodyPart: 4
+    avatarType: adawd
+    sprite: {fileID: 21300000, guid: 7076445966169284dbccd812f9354ba6, type: 3}
+  - id: Pistol
+    bodyPart: 4
+    avatarType: adawd
+    sprite: {fileID: 21300000, guid: 8d7d31062dbb9c7469245abc1b2bdf49, type: 3}

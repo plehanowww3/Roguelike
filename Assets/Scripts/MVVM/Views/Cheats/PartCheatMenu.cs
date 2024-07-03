@@ -16,10 +16,15 @@ namespace MVVM.Views.Cheats
 
         [Inject]
         private PartsViewModel m_skillsViewModel;
-        
+
         private void Awake()
         {
             m_chooseFirstHead.onClick.AddListener(OnNewItemSelected);
+        }
+
+        private void Start()
+        {
+            OnNewItemSelected();
         }
 
         private void OnNewItemSelected()

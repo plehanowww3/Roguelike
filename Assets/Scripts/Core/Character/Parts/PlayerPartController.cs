@@ -1,5 +1,7 @@
 using System;
+using MVVM.ViewModels;
 using UnityEngine;
+using Zenject;
 
 namespace Core.Character.Parts
 {
@@ -9,6 +11,9 @@ namespace Core.Character.Parts
         [SerializeField] private PlayerPart m_bodyPart;
         [SerializeField] private PlayerPart m_leftHandPart;
         [SerializeField] private PlayerPart m_rightHandPart;
+
+        [Inject]
+        private PartsViewModel m_partsViewModel;
 
         private void Awake()
         {

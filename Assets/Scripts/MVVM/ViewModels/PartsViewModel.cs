@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Data;
@@ -16,6 +17,7 @@ namespace MVVM.ViewModels
         public ReactiveProperty<bool> isAllSameType;
         
         public ReactiveCommand<string> setBodyPart;
+        public ReactiveCommand onAllPartsLoaded;
 
         [Inject]
         private PartsScriptableObject m_partsScriptableObject;
@@ -28,6 +30,7 @@ namespace MVVM.ViewModels
             m_characterParts = model.m_characterParts;
             isAllSameType = model.isAllSameType;
             setBodyPart = new ReactiveCommand<string>();
+            onAllPartsLoaded = new ReactiveCommand();
 
             setBodyPart.Subscribe(SetNewPart);
         }
@@ -47,9 +50,26 @@ namespace MVVM.ViewModels
         
         public void SetNewPart(string _partId)
         {
+            //todo выяснить почему сюда приходит
+            if (String.IsNullOrEmpty(_partId))
+                return;
+            
             var newPart = m_partsScriptableObject.m_partsDictionary
                 .FirstOrDefault(x => x.Key.Equals(_partId));
+            
+            if (newPart.Equals(default(KeyValuePair<string, BodyPartData>)))
+                return;
+            
+            var oldItemSameType = m_characterParts.FirstOrDefault(x => x.Value.bodyPart == newPart.Value.bodyPart);
+            if (!Equals(String.IsNullOrEmpty(oldItemSameType.Key)) && oldItemSameType.Value != null)
+            {
+                if (newPart.Key.Equals(oldItemSameType.Key))
+                    return;
                 
+                if (m_characterParts.ContainsKey(oldItemSameType.Key))
+                    m_characterParts.Remove(oldItemSameType.Key);
+            }
+            
             Debug.Log($"Set {_partId} part");
             model.m_characterParts[_partId] = newPart.Value;
             CheckIfAllSameType();

@@ -7,8 +7,8 @@ namespace Core.Character.Parts
     {
         public string id { get; }
         public string type { get; }
-        public BodyPart bodyPart { get; }
-        public void Attach();
+        public CharacterPart bodyPart { get; }
+        public void Attach(BodyPartData _partData);
         public void Detach();
     }
 }

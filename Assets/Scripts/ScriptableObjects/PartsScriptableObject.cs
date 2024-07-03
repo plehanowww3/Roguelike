@@ -26,9 +26,9 @@ namespace ScriptableObjects
             AddToDictionary(rightHand);
 
             m_partsByTypeDictionary[CharacterPart.HEAD] = head;
-            m_partsByTypeDictionary[CharacterPart.LEFT_HAND] = body;
-            m_partsByTypeDictionary[CharacterPart.RIGHT_HAND] = leftHand;
-            m_partsByTypeDictionary[CharacterPart.BODY] = rightHand;
+            m_partsByTypeDictionary[CharacterPart.LEFT_HAND] = leftHand;
+            m_partsByTypeDictionary[CharacterPart.RIGHT_HAND] = rightHand;
+            m_partsByTypeDictionary[CharacterPart.BODY] = body;
         }
         
 
