@@ -1,4 +1,5 @@
 using UnityEngine;
+using Zenject;
 
 namespace MVVM.ViewModels
 {
@@ -7,6 +8,7 @@ namespace MVVM.ViewModels
         /// <summary>
         /// Ссылка на модель
         /// </summary>
+        [Inject]
         protected Model model { get; }
 
         /// <summary>
